@@ -5,12 +5,15 @@
 
 :root{
     --primary:#3DCFD3;
+    --secondary:#070606;
+    --ternary:#898989;
+    --fourth:#232B38;
     --dark:#161616;
     --pure:#FFFFFF;
-    --ternary:#898989;
     --light:#F2F2F2;
-    --read-more:yellow;
-    --knowl:red;
+    --read-more:#FFFF00;
+    --knowl:#FF0000;
+    --footer:#2D333F;
 }
 
 /* ********************************* */
@@ -48,6 +51,7 @@ body{
 
 
 /* START STYLING OF NAVIGATION BAR */
+/*********************************/
 
 header{
     background: var(--dark);
@@ -80,12 +84,14 @@ header nav .branding{
     margin-right:3rem;
 }
 
+/* ***************************** */
 /* END STYLING OF NAVIGATION BAR */
 
 /* **************************************************************************************************************************** */
 
 
 /* START STYLING OF IMAGE 1 */
+/* ************************ */
 
 .myimage1{
     padding: 3rem 0;
@@ -125,10 +131,18 @@ width: 400px;
 .myimage1 .right{
     margin-top: -7rem;
 }
-
+/* ********************** */
 /* END STYLING OF IMAGE 1 */
 
+
+/* ******************* */
+/* END STYLING HEADERS */
+
 /* ****************************************************************************************************************************** */
+/* ****************************************************************************************************************************** */
+
+/* START STYLING ABOUT ME SECTION */
+/* ****************************** */
 
 section{
 padding: 6rem 0;
@@ -189,23 +203,28 @@ section.about .social a img{
     padding: 0.5rem;
 }
 
-/* ******************* */
-/* END STYLING HEADERS */
-
-/* ************************************************************************************************************************************************************* */
-
+/* END STYLING ABOUT ME SECTION */
+/* **************************** */
 
 /* ******************************************************************************************************************************* */
+/* ******************************************************************************************************************************* */
+
+/* START STYLING EDUCATION SECTION */
+/* ******************************* */
 
 section.our-education{
     background:var(--ternary);
     position:relative;
     z-index:0;
 }
+
+
 section.our-education .card-wrapper{
     margin-right:-2rem;
     margin-top:8rem;
 }
+
+
 section.our-education .education-card{
     background:var(--pure);
     text-align: center;
@@ -214,11 +233,10 @@ section.our-education .education-card{
     margin-right:2rem;
     position: relative;
     border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+    
 }
+
+
 section.our-education .education-card .icon{
     position: absolute;
     top:-45px;
@@ -229,20 +247,30 @@ section.our-education .education-card .icon{
     -ms-transform:translateX(-50%);
     -o-transform:translateX(-50%);
 } 
+
+
 section.our-education .education-card h2{
     font-family:'Lato', sans-serif;
     font-size: 1.3rem;
     margin-bottom:1rem;
 }
+
+
 section.our-education .education-card p{
     line-height: 1.6;
     margin-bottom:1rem;
 }
+
+
 .text-primary{
     color:var(--primary);
 }
 
-/*************************************************************************************************************************************************************/
+/* END STYLING EDUCATION SECTION */
+/* ***************************** */
+
+/* ****************************************************************************************************************************** */
+/* ****************************************************************************************************************************** */
 
 /*STARTING OF STYLING SKILLS SECTION/
 /***********************************/
@@ -258,10 +286,6 @@ section.skill .skill-slider .skill-card{
     background:var(--pure);
     padding:1.5rem 0;
     border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
 }
 
 /* SKILL CARD IMAGE */
@@ -327,37 +351,39 @@ section.skill .skill-slider .skill-card button{
     background:var(--pure);
     border:2px solid var(--read-more);
     border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
     display:flex;
     align-items: center;
     width:50%;
     font-size:1rem;
     cursor: pointer;
     transition:all .3s ease;
-    -webkit-transition:all .3s ease;
-    -moz-transition:all .3s ease;
-    -ms-transition:all .3s ease;
-    -o-transition:all .3s ease;
 }
+
+
 section.skill .skill-slider .skill-card button:hover{
     background:var(--primary);
     color:var(--pure);
 }
+
+
 .skill-slider .skill-card button img{
     background:var(--read-more);
     padding:0.50rem;
     height:32px;
     margin-right:1.2rem;
 }
+
+
 .slick-slide{
     margin:0 27px;
 }
+
+
 .slick-list{
     margin:0 -27px;
 }
+
+
 .skill .slider-btn{
     width: 30px;
     height:30px;
@@ -372,30 +398,107 @@ section.skill .skill-slider .skill-card button:hover{
     outline:none;
 }
 
+
 .prev-btn{
     position:absolute;
     top:46%;
     left:-3rem;
     z-index: 1;
 }
+
+
 .next-btn{
     position:absolute;
     top:46%;
     right:-3rem;
     z-index: 1;
 }
+
+
 .skill .slider{
     position: relative;
 }
+
+
 .skill .btn-wrapper{
     margin-top:2rem;
 }
+
+
 .slick-track{
     padding:1rem 0;
 }
 
-/***************************************************************************************************************************************************************/ 
-/***************************************************************************************************************************************************************/ 
+/* ******************************* */
+/* ENDING OF STYLING SKILL SECTION */
+
+/* ******************************************************************************************************************************* */
+/* ******************************************************************************************************************************* */ 
+
+/* START STYLING OF MY WORK SECTION */
+/* ******************************** */
+
+section.work{
+	background: var(--footer);
+}
+section.work .card-wrapper{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2rem;
+}
+
+section.work .card-wrapper .card{
+	position: relative;
+	height: 250px;
+
+}
+
+
+section.work .card-wrapper .card .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(61, 207, 211, 0.9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: var(--light);
+	opacity: 0;
+	transition: all .6s ease;
+
+}
+
+section.work .card-wrapper .card .overlay a{
+	color: var(--secondary);
+	text-decoration: none;
+}
+section.work .card-wrapper .card img{
+	height: 100%;
+	width: 100%;
+}
+
+section.work .card-wrapper .card:hover .overlay{
+opacity: 1;
+}
+section.work h1 span{
+    color: var(--primary);
+}
+
+section.work h1{
+    color: var(--pure);
+}
+
+/* ****************************** */
+/* END STYLING OF MY WORK SECTION */
+
+/* **************************************************************************************************************************** */
+/* **************************************************************************************************************************** */ 
+
+/* START STYLING CONTACT US SECTION */
+/* ******************************** */
 
 section.contact-us{
     padding-top:0;
@@ -430,3 +533,6 @@ section.contact-us .contact-info > div > div > div span:first-child{
     font-family: "Raleway-bold";
     margin-bottom:0.25rem;
 }
+
+/* ****************************** */
+/* END STYLING CONTACT US SECTION */
