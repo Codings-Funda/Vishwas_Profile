@@ -154,6 +154,7 @@ padding: 6rem 0;
 
 section.about .about-me-img{
     height: 450px;
+    box-shadow: 10px 20px 10px #3DCFD3;
 }
 
 section.about h1{
